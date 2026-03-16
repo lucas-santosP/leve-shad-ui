@@ -7,7 +7,7 @@
     "config": "",
     "css": "src/index.css",
     "baseColor": "neutral",
-    "cssVariables": true,
+    "cssVariables": false,
     "prefix": ""
   },
   "iconLibrary": "lucide",
@@ -15,7 +15,7 @@
   "aliases": {
     "components": "@/components",
     "utils": "@/lib/utils",
-    "ui": "@/components/ui",
+    "ui": "@/components",
     "lib": "@/lib",
     "hooks": "@/hooks"
   },
