@@ -62,3 +62,5 @@
     @apply font-sans;
   }
 }
+
+@source "../dist";

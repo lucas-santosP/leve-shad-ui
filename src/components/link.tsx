@@ -1,6 +1,6 @@
-import React from "react"
-import clsx from "clsx"
-import { linkStyles, type LinkStylesProps } from "./link.styles"
+import React from "react"; 
+import { linkStyles, type LinkStylesProps } from "./link.styles";
+import { cn } from "tailwind-variants";
 
 /**
  * Link component props.
@@ -15,43 +15,43 @@ export interface LinkProps extends Omit<React.ComponentProps<"a">, "color">, Lin
   /**
    * Additional CSS classes.
    */
-  className?: string
+  className?: string;
   /**
    * Text node children.
    */
-  children?: React.ReactNode
+  children?: React.ReactNode;
   /**
    * Link href attribute.
    */
-  href: string
+  href: string;
   /**
    * Left icon element.
    */
-  leftIcon?: React.ReactNode
+  leftIcon?: React.ReactNode;
   /**
    * Right icon element.
    */
-  rightIcon?: React.ReactNode
+  rightIcon?: React.ReactNode;
   /**
    * Disabled state.
    */
-  disabled?: boolean
+  disabled?: boolean;
 }
 
 export const Link = (props: LinkProps) => {
-  const { children, href, className, leftIcon, rightIcon, color, disabled, ...rest } = props
+  const { children, href, className, leftIcon, rightIcon, color, disabled, ...rest } = props;
 
   function handleClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
     if (disabled) {
-      e.preventDefault()
-      e.stopPropagation()
+      e.preventDefault();
+      e.stopPropagation();
     }
   }
 
   function handleKeyDown(e: React.KeyboardEvent<HTMLAnchorElement>) {
     if (disabled) {
-      e.preventDefault()
-      e.stopPropagation()
+      e.preventDefault();
+      e.stopPropagation();
     }
   }
 
@@ -63,11 +63,11 @@ export const Link = (props: LinkProps) => {
       tabIndex={disabled ? -1 : 0}
       aria-disabled={disabled}
       {...rest}
-      className={clsx(linkStyles({ color }), className)}
+      className={cn(linkStyles({ color }), className)}
     >
       {leftIcon}
       <span>{children}</span>
       {rightIcon}
     </a>
-  )
-}
+  );
+};
