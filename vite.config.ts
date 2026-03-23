@@ -48,6 +48,16 @@ export default defineConfig({
     projects: [
       {
         extends: true,
+        test: {
+          name: "unit",
+          include: ["src/**/*.test.tsx", "src/**/*.test.ts"],
+          environment: "happy-dom",
+          globals: true,
+          setupFiles: ["src/test/setup.ts"],
+        },
+      },
+      {
+        extends: true,
         plugins: [storybookTest({ configDir: path.join(dirname, ".storybook") })],
         test: {
           name: "storybook",

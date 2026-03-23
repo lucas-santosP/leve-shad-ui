@@ -1,7 +1,7 @@
 import { Avatar as AvatarPrimitive } from "@base-ui/react/avatar";
 import { cn } from "tailwind-variants";
-import { avatarStyles } from "./styles";
-import type { AvatarProps } from "./types";
+import { avatarStyles } from "./avatar.styles";
+import type { AvatarProps } from "./avatar.types";
 
 function Avatar({ src, fallback, className, size = "md" }: AvatarProps) {
   const styles = avatarStyles({ size });
@@ -15,4 +15,3 @@ function Avatar({ src, fallback, className, size = "md" }: AvatarProps) {
 }
 
 export { Avatar };
-export type { AvatarProps };

@@ -1,9 +1,8 @@
 import { Input as InputPrimitive } from "@base-ui/react/input";
-
 import { cn } from "tailwind-variants";
-import { inputStyles } from "./styles";
+import { inputStyles } from "./input.styles";
 import { Icons } from "@/libs/icons";
-import type { InputProps } from "./types";
+import type { InputProps } from "./input.types";
 
 function Input(props: InputProps) {
   const { className, type = "text", leftIcon, rightIcon, ...restProps } = props;
@@ -36,4 +35,3 @@ function Input(props: InputProps) {
 }
 
 export { Input };
-export type { InputProps };

@@ -1,7 +1,7 @@
 import { cn } from "tailwind-variants";
 import { Button as ButtonPrimitive } from "@base-ui/react/button";
-import { buttonStyles } from "./styles";
-import type { ButtonProps } from "./types";
+import { buttonStyles } from "./button.styles";
+import type { ButtonProps } from "./button.types";
 
 function Button(props: ButtonProps) {
   const { children, className, variant, color, size, rounded, leftIcon, rightIcon, ...rest } = props;
@@ -19,5 +19,4 @@ function Button(props: ButtonProps) {
   );
 }
 
-export { Button, buttonStyles };
-export type { ButtonProps };
+export { Button };

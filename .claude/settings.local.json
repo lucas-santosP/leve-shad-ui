@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(find /c/code/leve-shad-ui -not -path */node_modules/* -not -path */.git/* -not -path */dist/* -type d)",
-      "Bash(bun run:*)"
+      "Bash(bun run:*)",
+      "Bash(bun test:*)",
+      "Bash(bun add:*)"
     ]
   }
 }

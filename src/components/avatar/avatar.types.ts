@@ -1,4 +1,4 @@
-import type { AvatarStylesProps } from "./styles";
+import type { AvatarStylesProps } from "./avatar.styles";
 
 export interface AvatarProps extends AvatarStylesProps {
   /** Image source URL. */

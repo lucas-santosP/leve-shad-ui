@@ -1,5 +1,5 @@
 import type { Button as ButtonPrimitive } from "@base-ui/react/button";
-import type { ButtonStylesProps } from "./styles";
+import type { ButtonStylesProps } from "./button.styles";
 
 export interface ButtonProps extends ButtonPrimitive.Props, ButtonStylesProps {
   /**

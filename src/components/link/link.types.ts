@@ -1,15 +1,6 @@
 import React from "react";
-import type { LinkStylesProps } from "./styles";
+import type { LinkStylesProps } from "./link.styles";
 
-/**
- * Link component props.
- *
- * @property {string} [className] - Additional CSS classes.
- * @property {React.ReactNode} [children] - Text node children.
- * @property {string} href - Link href attribute.
- * @property {ReactNode} [leftIcon] - Left icon element.
- * @property {ReactNode} [rightIcon] - Right icon element.
- */
 export interface LinkProps extends Omit<React.ComponentProps<"a">, "color">, LinkStylesProps {
   /**
    * Additional CSS classes.

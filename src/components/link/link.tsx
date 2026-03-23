@@ -1,7 +1,7 @@
 import React from "react";
-import { linkStyles } from "./styles";
+import { linkStyles } from "./link.styles";
 import { cn } from "tailwind-variants";
-import type { LinkProps } from "./types";
+import type { LinkProps } from "./link.types";
 
 export const Link = (props: LinkProps) => {
   const { children, href, className, leftIcon, rightIcon, color, disabled, ...rest } = props;
@@ -36,5 +36,3 @@ export const Link = (props: LinkProps) => {
     </a>
   );
 };
-
-export type { LinkProps };

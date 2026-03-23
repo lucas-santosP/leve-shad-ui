@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from "@storybook/react-vite"
-import { Link } from "."
-import { linkStyles } from "./styles"
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { Link } from "./link";
+import { linkStyles } from "./link.styles";
 
 const meta = {
   title: "Components/Link",
@@ -16,10 +16,10 @@ const meta = {
       description: "Link color",
     },
   },
-} satisfies Meta<typeof Link>
+} satisfies Meta<typeof Link>;
 
-export default meta
-type Story = StoryObj<typeof meta>
+export default meta;
+type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
@@ -28,7 +28,7 @@ export const Default: Story = {
     leftIcon: "👍",
     target: "_blank",
   },
-}
+};
 
 export const Disabled: Story = {
   args: {
@@ -36,4 +36,4 @@ export const Disabled: Story = {
     href: "#",
     disabled: true,
   },
-}
+};
