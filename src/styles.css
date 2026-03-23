@@ -3,13 +3,12 @@
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/raleway";
 
-@custom-variant dark (&:is(.dark *));
-
 @theme {
-  --font-display: "Raleway Variable", sans-serif;
+  --color-*: initial;
+  --color-white: #ffffff;
+  --color-black: #000000;
 
-  --color-neutral-50: #fff;
-  --color-neutral-100: #f9f9f9;
+  --color-neutral-100: #ffffff;
   --color-neutral-200: #f2f2f2;
   --color-neutral-300: #dedede;
   --color-neutral-400: #c1c1c1;
@@ -18,7 +17,18 @@
   --color-neutral-700: #666666;
   --color-neutral-800: #4c4c4c;
   --color-neutral-900: #333333;
-  --color-neutral-950: #000000;
+  --color-neutral-1000: #000000;
+
+  --color-purple-100: #a38fa3;
+  --color-purple-200: #806580;
+  --color-purple-300: #755774;
+  --color-purple-400: #6b476a;
+  --color-purple-500: #60395f;
+  --color-purple-600: #562955;
+  --color-purple-700: #451e44;
+  --color-purple-800: #361735;
+  --color-purple-900: #250e24;
+  --color-purple-1000: #130613;
 
   --color-orange-100: #fdcab4;
   --color-orange-200: #fe9467;
@@ -31,21 +41,153 @@
   --color-orange-900: #982e01;
   --color-orange-1000: #7e2601;
 
-  --radius-sm: calc(0.625rem * 0.6);
-  --radius-md: calc(0.625rem * 0.8);
-  --radius-lg: 0.625rem;
-  --radius-xl: calc(0.625rem * 1.4);
-  --radius-2xl: calc(0.625rem * 1.8);
-  --radius-3xl: calc(0.625rem * 2.2);
-  --radius-4xl: calc(0.625rem * 2.6);
+  --color-red-100: #ffcccc;
+  --color-red-200: #ff9999;
+  --color-red-300: #ff6666;
+  --color-red-400: #ff4c4c;
+  --color-red-500: #ff1b1b;
+  --color-red-600: #e50000;
+  --color-red-700: #cc0000;
+  --color-red-800: #b20000;
+  --color-red-900: #990000;
+  --color-red-1000: #800000;
+
+  --color-yellow-100: #fef9c3;
+  --color-yellow-200: #fef08a;
+  --color-yellow-300: #fde047;
+  --color-yellow-400: #facc15;
+  --color-yellow-500: #eab308;
+  --color-yellow-600: #ca8a04;
+  --color-yellow-700: #a16207;
+  --color-yellow-800: #854d0e;
+  --color-yellow-900: #713f12;
+  --color-yellow-1000: #5a2f16;
+
+  --color-sand-100: #fdf4e7;
+  --color-sand-200: #fae9cf;
+  --color-sand-300: #f2d5b0;
+  --color-sand-400: #e9c091;
+  --color-sand-500: #d4a373;
+  --color-sand-600: #b78f5c;
+  --color-sand-700: #9a7b45;
+  --color-sand-800: #7d672e;
+  --color-sand-900: #605317;
+  --color-sand-1000: #433b08;
+
+  --color-green-100: #e0ffdf;
+  --color-green-200: #aaf0a8;
+  --color-green-300: #7fe87d;
+  --color-green-400: #6ae467;
+  --color-green-500: #04cb00;
+  --color-green-600: #04b200;
+  --color-green-700: #039900;
+  --color-green-800: #038000;
+  --color-green-900: #026600;
+  --color-green-1000: #024c00;
+
+  --color-petrol-100: #e8faf8;
+  --color-petrol-200: #98d9d3;
+  --color-petrol-300: #28bdae;
+  --color-petrol-400: #1fad9e;
+  --color-petrol-500: #169c8e;
+  --color-petrol-600: #0f8a7d;
+  --color-petrol-700: #007367;
+  --color-petrol-800: #005c52;
+  --color-petrol-900: #004c44;
+  --color-petrol-1000: #00332e;
+
+  --color-olive-100: #f2f8f4;
+  --color-olive-200: #eaf3ee;
+  --color-olive-300: #dfece5;
+  --color-olive-400: #cee3d8;
+  --color-olive-500: #bedaca;
+  --color-olive-600: #aed1bd;
+  --color-olive-700: #9ec7b0;
+  --color-olive-800: #8dbea3;
+  --color-olive-900: #7db596;
+  --color-olive-1000: #6ca789;
+
+  --color-lead-100: #f1f5f9;
+  --color-lead-200: #e2e8f0;
+  --color-lead-300: #cbd5e1;
+  --color-lead-400: #94a3b8;
+  --color-lead-500: #64748b;
+  --color-lead-600: #475569;
+  --color-lead-700: #3f4a4f;
+  --color-lead-800: #2e3940;
+  --color-lead-900: #1e2937;
+  --color-lead-1000: #0f172a;
+
+  --color-pink-100: #fce7f3;
+  --color-pink-200: #fbcfe8;
+  --color-pink-300: #f9a8d4;
+  --color-pink-400: #f472b6;
+  --color-pink-500: #ec4899;
+  --color-pink-600: #db2777;
+  --color-pink-700: #e93e7d;
+  --color-pink-800: #c21b5e;
+  --color-pink-900: #9d174d;
+  --color-pink-1000: #86133c;
+
+  --font-*: initial;
+  --font-sans: Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1rem;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.25rem;
+  --text-base: 1rem;
+  --text-base--line-height: 1.5rem;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 1.75rem;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 2rem;
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: 2.25rem;
+  --text-4xl: 2.25rem;
+  --text-4xl--line-height: 2.5rem;
+  --text-5xl: 2.5rem;
+  --text-5xl--line-height: 1;
+  --text-6xl: 3rem;
+  --text-6xl--line-height: 1;
+  --text-7xl: 3.5rem;
+  --text-7xl--line-height: 1;
+  --text-8xl: 4rem;
+  --text-8xl--line-height: 1;
+  --text-9xl: 6rem;
+  --text-9xl--line-height: 1;
+
+  --radius-*: initial;
+  --radius-none: 0;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-3xl: 2.5rem;
+  --radius-4xl: 3rem;
+  --radius-5xl: 3.5rem;
+  --radius-full: 9999px;
+  --radius-0: 0px;
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-16: 16px;
+  --radius-24: 24px;
+  --radius-32: 32px;
+  --radius-40: 40px;
+  --radius-48: 48px;
+  --radius-56: 56px;
 
   --brightness-80: 0.8;
 }
 
 @theme inline {
   --color-primary: var(--color-orange-500);
-  --color-secondary: var(--color-neutral-200);
-  --color-ring: var(--color-neutral-400);
+  --color-secondary: var(--color-purple-700);
+  --color-ring: var(--color-orange-500);
   --color-border: var(--color-neutral-300);
 
   --color-error: var(--color-red-600);

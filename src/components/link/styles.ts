@@ -1,4 +1,4 @@
-import { tv, type VariantProps } from "tailwind-variants"
+import { tv, type VariantProps } from "tailwind-variants";
 
 export const linkStyles = tv({
   base: [
@@ -29,6 +29,6 @@ export const linkStyles = tv({
   defaultVariants: {
     color: "primary",
   },
-})
+});
 
-export type LinkStylesProps = VariantProps<typeof linkStyles>
+export type LinkStylesProps = VariantProps<typeof linkStyles>;

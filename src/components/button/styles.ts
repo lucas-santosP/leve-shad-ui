@@ -24,7 +24,7 @@ export const buttonStyles = tv({
       green: "[--btn-color:var(--color-green-600)]",
     },
     variant: {
-      solid: "bg-(--btn-color) text-white hover:bg-[color-mix(in_srgb,var(--btn-color),black_20%)]",
+      solid: "text-white bg-(--btn-color) hover:bg-[color-mix(in_srgb,var(--btn-color),black_20%)]",
       outline:
         "border-2 border-(--btn-color) bg-transparent text-(--btn-color) hover:border-[color-mix(in_lab,var(--btn-color),black_20%)] hover:text-[color-mix(in_lab,var(--btn-color),black_20%)]",
       ghost: "text-(--btn-color) hover:bg-(--btn-color)/10 hover:text-[color-mix(in_lab,var(--btn-color),black_20%)]",
