@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/lucas-santosP/leve-shad-ui/compare/v1.1.2...v1.1.3) (2026-03-23)
+
+
+### Bug Fixes
+
+* doc in readme ([753ae6a](https://github.com/lucas-santosP/leve-shad-ui/commit/753ae6a09405284d5b1e2015f5ec94edff0b2586))
+
 ## [1.1.2](https://github.com/lucas-santosP/leve-shad-ui/compare/v1.1.1...v1.1.2) (2026-03-23)
 
 
