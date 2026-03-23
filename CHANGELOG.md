@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/lucas-santosP/test-ui-components/compare/v1.1.0...v1.1.1) (2026-03-23)
+
+
+### Bug Fixes
+
+* link styles ([7bbf627](https://github.com/lucas-santosP/test-ui-components/commit/7bbf627dcfaff9123c8b9960655a76defa2b8628))
+
 # [1.1.0](https://github.com/lucas-santosP/test-ui-components/compare/v1.0.0...v1.1.0) (2026-03-23)
 
 
