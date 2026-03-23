@@ -10,7 +10,7 @@ export const linkStyles = tv({
   variants: {
     color: {
       primary: "text-primary",
-      secondary: "text-secondary",
+      secondary: "text-secondary-500",
       black: "text-black",
       white: "text-white",
       purple: "text-purple-500",
