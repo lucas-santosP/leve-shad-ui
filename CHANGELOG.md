@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/lucas-santosP/leve-shad-ui/compare/v1.1.1...v1.1.2) (2026-03-23)
+
+
+### Bug Fixes
+
+* input testing ([1992a71](https://github.com/lucas-santosP/leve-shad-ui/commit/1992a71974a02139fc4ccc22d9218ec83810b180))
+
 ## [1.1.1](https://github.com/lucas-santosP/test-ui-components/compare/v1.1.0...v1.1.1) (2026-03-23)
 
 
