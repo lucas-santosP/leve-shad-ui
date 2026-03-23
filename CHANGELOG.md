@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/lucas-santosP/leve-shad-ui/compare/v1.1.3...v1.1.4) (2026-03-23)
+
+
+### Bug Fixes
+
+* add api extractor ([7ff3e14](https://github.com/lucas-santosP/leve-shad-ui/commit/7ff3e14f7e1d9adafd2f789a1d51fe42d1e0e9ff))
+
 ## [1.1.3](https://github.com/lucas-santosP/leve-shad-ui/compare/v1.1.2...v1.1.3) (2026-03-23)
 
 
