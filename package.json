@@ -12,7 +12,7 @@
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview",
-    "test": "bunx vitest run --project unit",
+    "test": "vitest run --project unit",
     "prepublishOnly": "bun run typecheck && bun run lint && bun run build",
     "semantic-release": "semantic-release"
   },
